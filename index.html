@@ -24,9 +24,10 @@
 
     .timer {
       display: inline-flex;  
+      -webkit-app-region: drag; /* Permite arrastar a janela pela barra de título */
       align-items: center;        
       gap: 10px;                  
-      font-size: 24px;
+      font-size: 40px;
       font-weight: bold;
       text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
       background: rgba(0, 0, 0, 0.5);
@@ -62,7 +63,7 @@
       }
       setInterval(updateTimer, 1000);
     }
-    
+
     startTimer();
   </script>
 </body>

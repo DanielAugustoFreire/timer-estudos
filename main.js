@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron');
 
 let mainWindow;
 
@@ -19,7 +19,13 @@ app.whenReady().then(() => {
     const primaryDisplay = screen.getPrimaryDisplay();
     const { width } = primaryDisplay.workAreaSize;
 
-    mainWindow.setBounds({ x: (width - 150) / 2, y: 0, width: 130, height: 50 });
+    mainWindow.setBounds({ x: (width - 150) / 2, y: 0, width: 185, height: 58 });
 
     mainWindow.loadFile('index.html');
+});
+
+ipcMain.on("close-window", () => {
+    if (mainWindow) {
+        mainWindow.close();
+    }
 });
