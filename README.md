@@ -21,7 +21,7 @@ ou entao em linha de comando escrever:
         npm install
 e
 
-        npm run build
+        npm run package
         
 
 Após isso, no próprio terminal, escreva `explorer .` para abrir a pasta onde você executou o comando. Entre na pasta que apareceu buildada e, agora, basta clicar no executável **meu-app.exe.**
