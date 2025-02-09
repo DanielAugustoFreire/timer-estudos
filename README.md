@@ -25,3 +25,6 @@ e
         
 
 Após isso, no próprio terminal, escreva `explorer .` para abrir a pasta onde você executou o comando. Entre na pasta que apareceu buildada e, agora, basta clicar no executável **meu-app.exe.**
+
+# Fica mais ou menos assim!
+![image](https://github.com/user-attachments/assets/a7ded567-3975-4745-83c6-2814cec8e403)
